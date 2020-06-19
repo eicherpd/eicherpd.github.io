@@ -1,5 +1,9 @@
+* {
+	box-sizing:border-box;
+}
+
 body {
-	background:#FFFFFF url("images/sky.png") no-repeat right;
+	background-color:#FFFFFF;
 	background-size:100% 100%;
 	color:#666666;
 	font-family: Arial;
@@ -7,18 +11,23 @@ body {
 
 main {
 	padding: 1px 20px 20px 20px;
+	background-color:#FFFFFF;
+	margin-left:190px;
+	padding-left:30px;
 }
 
 header {
 	color:#FFFFFF;
 	background:#00B386;
-	height:60px;
 	text-align:center;
-	padding-top: 15px;
+	height:175px;
+	padding-top:30px; padding-left: 3em;
 }
 
 footer {
 	font-size:75%;
+	background-color: #FFFFFF;
+	margin-left: 190px;
 	font-style:italic;
 	text-align:center;
 	font-family:Georgia;
@@ -26,14 +35,34 @@ footer {
 }
 
 nav {
-	background-color:#ffffff;
-	text-align: center;
-	padding:10px;
+	padding:1.5em;
+	font-size:120%;
+	float:left;
+	width:160px;
 	font-weight: bold;
+}
+
+nav ul {
+	list-style:none;
+	margin:0;
+	padding-left: 0;
+	font-size: 1.2em;
 }
 
 nav a {
 	text-decoration:none;
+}
+
+nav a:link {
+	color:#00664D;
+}
+
+nav a:visited {
+	color: #7A7A52;
+}
+
+nav a:hover {
+	color:#FFFFFF;
 }
 
 h1, h2, h3 {
@@ -42,8 +71,10 @@ h1, h2, h3 {
 
 h1 {
 	margin-bottom:0;
-	margin-top:0;
 	text-shadow: 1px 1px #CCCCCC;
+	margin-top:0;
+	font-size:3em;
+	letter-spacing:.25em;
 }
 
 h2 {
@@ -51,7 +82,7 @@ h2 {
 	
 }
 
-ul {
+main ul {
 	list-style-image:url("images/marker.gif")
 }
 
@@ -62,9 +93,11 @@ dt {
 
 #wrapper {
 	margin:auto;
-	background-color:#FFFFFF;
+	background-image: linear-gradient(#ffffff, #0C5442);
+	background-color:#0C5442;
 	width:80%;
 	min-width: 900px; max-width: 2050px;
+	border: #003300 1.5pt;
 	box-shadow: 4px 4px #133926;
 }
 
@@ -75,6 +108,9 @@ dt {
 
 #contact {
 	font-size:90%;
+}
+#heroHome, #heroBoard, #heroTraining {
+	margin-left:190px;
 }
 
 #heroHome {
