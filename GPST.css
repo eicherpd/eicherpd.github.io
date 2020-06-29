@@ -2,6 +2,10 @@
 	box-sizing:border-box;
 }
 
+header, main, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
 body {
 	background-color:#FFFFFF;
 	background-size:100% 100%;
@@ -97,7 +101,7 @@ dt {
 	background-color:#0C5442;
 	width:80%;
 	min-width: 900px; max-width: 2050px;
-	border: #003300 1.5pt;
+	border: 1.5pt #003300;
 	box-shadow: 4px 4px #133926;
 }
 
@@ -129,4 +133,103 @@ dt {
 	height:300px;
 	background: url("images/BayBella.png") no-repeat;
 	background-size: 100% 100%;
+}
+
+#mobile {
+	display:none;
+}
+
+#desktop {
+	display:none;
+}
+
+@media only screen and (max-width:64em) {
+	body {
+		margin:0;
+		background-color:#FFFFFF;
+	}
+	
+	header {
+		padding-top:0.5em;
+		padding-bottom:0.5em;
+		padding-left:0;
+		height:auto;
+	}
+	
+	main {
+		margin-left:0;
+	}
+	
+	nav {
+		float:none;
+		width:auto;
+		text-align:center;
+		padding:0.5em;
+	}
+	
+	nav li {
+		display:inline;
+		padding: .25em .75em;
+		
+	}
+	
+	h1 {
+		letter-spacing: 0.1em;
+	}
+	
+	#wrapper {
+		min-width:0;
+		width:auto;
+		box-shadow:none;
+		border:none;
+	}
+	
+	#heroHome, #heroBoard, #heroTraining {
+		margin-left:0;
+		height:200px;
+	}
+	
+	footer {
+		margin-left:0;
+	}
+}
+
+@media only screen and (max-width:37.5em) {
+	main {
+		padding: 0.1em 1em;
+		font-size:90%;
+	}
+	
+	h1 {
+		font-size:2em;
+	}
+	
+	nav {
+		padding:0;
+	}
+	
+	nav li {
+		display:block;
+		margin:0;
+		border-bottom: 2px solid #330000;
+		
+	}
+	
+	nav li a {
+		display:block;
+		
+	}
+	
+	#heroHome, #heroBoard, #heroTraining {
+		background-image:none;
+		height:0;
+	}
+	
+	#mobile {
+		display:inline;
+	}
+	
+	#desktop {
+		display:none;
+	}
 }
