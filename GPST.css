@@ -153,6 +153,23 @@ table {
 	border-collapse: collapse;
 }
 
+label {
+	float:left;
+	display:block;
+	text-align: right;
+	width:125px;
+	padding-right:2em;
+}
+
+input, textarea {
+	display:block;
+	margin-bottom:20px;
+}
+
+input[type=submit] {
+	margin-left: 135px;
+}
+
 td, th {
 	padding:.5em;
 	border: 1px solid #006600;
@@ -250,5 +267,14 @@ tr:nth-child(even) {
 	
 	#desktop {
 		display:none;
+	}
+	
+	label {
+		float:none;
+		text-align: left;
+	}
+	
+	input [type="submit"] {
+		margin-left: 0;
 	}
 }
