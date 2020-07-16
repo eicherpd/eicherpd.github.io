@@ -6,9 +6,22 @@
 	background-color:#222222;
 	color:#fff;
 }
+body {
+	margin:0;
+}
 
 p {
 	font-size:1em;
+	text-align:justify;
+	line-height: 1.5em;
+}
+
+p a {
+	text-decoration:underline;
+}
+
+p a:hover {
+	color:#ff0000;
 }
 
 h1 {
@@ -32,7 +45,7 @@ main {
 	display:flex;
 	width:70%;
 	float:right;
-	padding:15px;
+	padding:15px 45px 0 0;
 	align-content:center;
 	justify-content: center;
 	flex-direction: column;
@@ -66,6 +79,11 @@ nav li {
 	font-size:3em;
 }
 
+
+td {
+	padding-right:30px;
+}
+
 .flex-wrap {
 	display:flex;
 	justify-content: center;
@@ -93,10 +111,19 @@ nav li {
 	width:100%;height:auto;
 }
 
+.square {
+	overflow:hidden;
+}
+
 .square:after {
 	content:"";
 	display:block;
 	padding-bottom:100%;
+}
+
+.square img {
+	height:100%; height:auto;
+	
 }
 
 .flex-item img {
@@ -109,10 +136,18 @@ nav li {
 		clear:both;
 		position:relative;
 	}
+	nav li {
+		float:left;
+		padding-right: 15px;
+	}
 	.flex-item {
 		width:90vw;height:auto;
 	}
 	.flex-item:after {
 		display:none;
+	}
+	main {
+		float:none;
+		padding:0;
 	}
 }
