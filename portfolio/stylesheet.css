@@ -51,6 +51,24 @@ main {
 	flex-direction: column;
 }
 
+label {
+	float:left;
+	display:block;
+	text-align: left;
+	width:125px;
+	padding-right:2em;
+}
+
+input, textarea {
+	display:block;
+	margin-bottom:20px;
+	background-color:#fff;
+	border-radius:3px;
+}
+
+
+
+
 nav {
 	display:block;
 	width:15%;
