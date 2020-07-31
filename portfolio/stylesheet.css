@@ -154,13 +154,19 @@ td {
 		width:100%;
 		clear:both;
 		position:relative;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+		padding:0;
+		
 	}
 	nav li {
 		float:left;
 		padding-right: 15px;
 	}
 	.flex-item {
-		width:90vw;height:auto;
+		width:100vw;height:auto;
+		margin: 15px 0;
 	}
 	.flex-item:after {
 		display:none;
